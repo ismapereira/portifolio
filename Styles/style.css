@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --cor-primaria: #143d59;
+    --cor-secundaria: #F8F8FF;
+    --cor-terciaria: #f4b41a;
+
+    --fonte-primaria: 'Jockey One', sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    
+}
+
+.destaque1{
+    color: var(--cor-terciaria);
+}
+
+.conteudo{
+    padding: 2% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.conteudo_2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo_apresentacao{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+.paragrafo{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    font-size: 1.5rem;
+}
+
+.botao{
+    /* background-color: ghostwhite; */
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1,25rem;
+    padding: 5px 0;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--cor-terciaria);    
+}
+
+.subtitulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+}
+.botao:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.rodape{
+    padding: 10px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1,25rem;
+}
+
+.link{
+    font-family: var(--fonte-primaria);
+    font-size: 1,25rem;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+.menu{
+    display: flex;
+    gap: 80px;
+}
+
+.imagem{
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+
+    .conteudo {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+    .conteudo_2{
+        width: auto;
+    }
+}
+
+
